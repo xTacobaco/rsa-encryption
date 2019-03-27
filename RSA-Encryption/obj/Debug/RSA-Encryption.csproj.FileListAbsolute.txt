@@ -1,0 +1,3 @@
+C:\Projects\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe.config
+C:\Projects\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.exe
+C:\Projects\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.pdb
