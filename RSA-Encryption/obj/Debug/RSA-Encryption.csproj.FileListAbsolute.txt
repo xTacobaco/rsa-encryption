@@ -1,1 +1,10 @@
 C:\Projects\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe.config
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe.config
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.pdb
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.csprojResolveAssemblyReference.cache
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA_Encryption.Form1.resources
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA_Encryption.Properties.Resources.resources
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.csproj.GenerateResource.Cache
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.exe
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.pdb
