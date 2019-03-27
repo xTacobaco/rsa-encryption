@@ -9,6 +9,9 @@ namespace RSA_Encryption {
     public int GreatestCommonDivider(int a, int b) {
       int k = a / b;
       int r = a - k * b;
+          //test
+
+
 
       while (r > 0) {
           a = b;

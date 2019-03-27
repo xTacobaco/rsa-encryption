@@ -1,3 +1,6 @@
 C:\Projects\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe.config
 C:\Projects\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.exe
 C:\Projects\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.pdb
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\bin\Debug\RSA-Encryption.exe.config
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.exe
+\\fs1.ad.ssis.nu\16peak\Documents\Kurser\Matte\RSA-Encryption\RSA-Encryption\obj\Debug\RSA-Encryption.pdb
