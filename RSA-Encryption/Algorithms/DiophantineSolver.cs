@@ -10,8 +10,9 @@ namespace RSA_Encryption {
         {
             //a blir m och b blir e.
             //vi vill köra tills mx+ey=1, y=d
-            int rneg1,r0,r1, r2, r3, r4, r5, q1, q2, q3, q4, q5,r;
+            int rneg1,r0,r1, r2, r3, r4, r5, q1, q2, q3, q4, q5,r,q;
             //rn = q(n + 2) * r(n + 1) + r(n + 2);
+            q = a % b;
             r=
             while (r != 1)
             {
