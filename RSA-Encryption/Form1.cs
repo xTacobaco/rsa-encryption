@@ -13,5 +13,10 @@ namespace RSA_Encryption {
     public Form1() {
       InitializeComponent();
     }
+
+    private void Form1_Load(object sender, EventArgs e) {
+      EuclideanAlgorithm ea = new EuclideanAlgorithm();
+      txtP.Text = ea.GreatestCommonDivider((int)numP1.Value, (int)numP2.Value).ToString();
+    }
   }
 }
