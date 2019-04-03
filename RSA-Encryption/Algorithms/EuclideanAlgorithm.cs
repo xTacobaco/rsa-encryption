@@ -3,10 +3,7 @@
 namespace RSA_Encryption {
   class EuclideanAlgorithm {
     //Största gemensamma delare.
-    public static int GCD(int a, int b) {
-      if (b == 0)
-        return a;
-
+    static int GCD(int a, int b) {
       while (b != 0) {
         int c = a % b;
         a = b;
@@ -14,6 +11,15 @@ namespace RSA_Encryption {
       }
 
       return a;
+    }
+
+    public static int Coprime(int m) {
+      for (int i=m/2; i > 1; i--) {
+        if (GCD(i, m) == 1) 
+          return i;
+      }
+
+      return 0;
     }
   }
 }
