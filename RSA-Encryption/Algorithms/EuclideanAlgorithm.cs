@@ -12,9 +12,10 @@ namespace RSA_Encryption {
 
       return a;
     }
-
+    
+    //Största relativit prima tal mindre än m.
     public static int Coprime(int m) {
-      for (int i=m/2; i > 1; i--) {
+      for (int i=m; i > 1; --i) {
         if (GCD(i, m) == 1) 
           return i;
       }
