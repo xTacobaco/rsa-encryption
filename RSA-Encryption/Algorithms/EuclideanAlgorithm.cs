@@ -7,8 +7,13 @@ namespace RSA_Encryption {
       if (b == 0)
         return a;
 
-      int c = a % b;
-      return GCD(b, c);
+      while (b != 0) {
+        int c = a % b;
+        a = b;
+        b = c;
+      }
+
+      return a;
     }
   }
 }

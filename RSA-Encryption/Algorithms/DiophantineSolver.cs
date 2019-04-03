@@ -4,26 +4,29 @@ using System.Collections.Generic;
 namespace RSA_Encryption {
   class DiophantineSolver {
     //Multiplikativ inverse
-    public static int MI(int a, int b) {
+    public static Tuple<int, int> MI(int a, int b) {
       List<item> table = new List<item>();
       table.Add(new item(a, null, 1, 0));
       table.Add(new item(b, null, 0, 1));
       
+      int i;
       while (true) {
-        int r = table[table.Count-2].r % table[table.Count-1].r;
+        i = table.Count;
+        int r = table[i-2].r % table[i-1].r;
         if (r == 0) break;
 
-        int k = table[table.Count-2].r / table[table.Count-1].r;
-        int x = table[table.Count-2].x - k * table[table.Count-1].x;
-        int y = table[table.Count-2].y - k * table[table.Count-1].y;
+        int k = table[i-2].r / table[i-1].r;
+        int x = table[i-2].x - k * table[i-1].x;
+        int y = table[i-2].y - k * table[i-1].y;
 
-        table.Add(new item(r,k,x,y));
+        table.Add(new item(r, k, x, y));
+        table.RemoveAt(i-2);
       }
 
-      return table[table.Count-1].x;
+      return Tuple.Create(table[i-1].x, table[i-1].y);
     }
 
-    class item {
+    struct item {
       public int r, x, y;
       public int? k; 
 

@@ -55,6 +55,7 @@
             0,
             0,
             0});
+      this.numP1.ValueChanged += new System.EventHandler(this.calcMI);
       // 
       // numP2
       // 
@@ -72,6 +73,7 @@
             0,
             0,
             0});
+      this.numP2.ValueChanged += new System.EventHandler(this.calcMI);
       // 
       // lbl
       // 
