@@ -15,7 +15,7 @@ namespace RSA_Encryption {
     }
 
     public static string Encrypt(Tuple<long, long> publicKey, long input) {
-      return (Math.Pow(input, publicKey.Item2) % publicKey.Item1).ToString();
+      return (Math.Pow(input, publicKey.Item1) % publicKey.Item2).ToString();
     }
 
     public static string Decrypt(Tuple<long, long> privateKey, long input) {
