@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace RSA_Encryption {
   class DiophantineSolver {
     //Multiplikativ inverse
-    public static Tuple<int, int> MultiplicativeInverse(int a, int b) {
+    public static Tuple<long, long> MultiplicativeInverse(long a, long b) {
       List<item> table = new List<item>();
       table.Add(new item(a, null, 1, 0));
       table.Add(new item(b, null, 0, 1));
@@ -12,12 +12,12 @@ namespace RSA_Encryption {
       int i;
       while (true) {
         i = table.Count;
-        int r = table[i-2].r % table[i-1].r;
+        long r = table[i-2].r % table[i-1].r;
         if (r == 0) break;
 
-        int k = table[i-2].r / table[i-1].r;
-        int x = table[i-2].x - k * table[i-1].x;
-        int y = table[i-2].y - k * table[i-1].y;
+        long k = table[i-2].r / table[i-1].r;
+        long x = table[i-2].x - k * table[i-1].x;
+        long y = table[i-2].y - k * table[i-1].y;
 
         table.Add(new item(r, k, x, y));
         table.RemoveAt(i-2);
@@ -27,10 +27,10 @@ namespace RSA_Encryption {
     }
 
     struct item {
-      public int r, x, y;
-      public int? k; 
+      public long r, x, y;
+      public long? k; 
 
-      public item(int r, int? k, int x, int y) {
+      public item(long r, long? k, long x, long y) {
         this.r = r;
         this.k = k;
         this.x = x;
