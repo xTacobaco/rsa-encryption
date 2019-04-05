@@ -1,4 +1,6 @@
-﻿namespace RSA_Encryption {
+﻿using System;
+
+namespace RSA_Encryption {
   class EuclideanAlgorithm {
     //Största gemensamma delare.
     static long GCD(long a, long b) {
@@ -11,12 +13,17 @@
       return a;
     }
     
-    //Generera relativit prima tal 2/3 mindre än m.
-    public static long Coprime(long m) {
-      for (long i=m/4-4; i > 1; --i) {
-        if (GCD(i, m) == 1) 
-          return i;
+    //Generera ett värde på e.
+    public static long GetE(long m, long p, long q) {
+      long[] values = new long[] { 3, 5/*, 17*/, 257, 65537 };
+      for (int i=values.Length-1; i > 0; i--) {
+        if (m < values[i]) continue;
+        if (GCD(m, values[i]) != 1) continue;
+        if (p % values[i] == 1) continue;
+        if (q % values[i] == 1) continue;
+        return values[i];
       }
+
       return 0;
     }
   }
